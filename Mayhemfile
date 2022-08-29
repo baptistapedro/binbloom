@@ -9,7 +9,7 @@ project: baptistapedro/binbloom-fuzz
 target: binbloom-fuzz-3
 
 # Base image to run the binary in.
-image: index.docker.io/pedbap/binbloom-fuzz@sha256:181c87645e6a0ede2cc85041f24a0294d23f729e23c5152bd077e88568ed4cc0
+image: pedbap/binbloom-fuzz:3
 
 # Turns on extra test case processing (completing a run will take longer)
 advanced_triage: false
@@ -41,6 +41,3 @@ cmds:
     ## that length will be truncated. Be very careful about increasing this
     ## limit as it can severely affect your fuzzer performance.
     # max_length: 8192
-
-testsuite:
-  - https://mayhem.forallsecure.com/baptistapedro/binbloom-fuzz/binbloom-fuzz-3/testsuite.tar
